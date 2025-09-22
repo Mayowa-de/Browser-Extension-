@@ -1,10 +1,10 @@
 import './index.css'
-import Hero from "./Hero"
+import Hero from "./components/Hero"
 
 function App() {
 
   return (
-      <div>
+      <div className='bg-[hsl(227, 75%, 14%)] p-2'>
         <Hero/>
       </div>
   )
