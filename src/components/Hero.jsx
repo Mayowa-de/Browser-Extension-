@@ -1,6 +1,7 @@
 import React from 'react'
+import './Hero.css'
 import Date from '../data.json'
-import Logo from './assets/images/logo.svg'
+import Logo from '../assets/images/logo.svg'
 export default function Hero() {
   return (
     <div className=''>
