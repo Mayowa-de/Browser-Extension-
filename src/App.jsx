@@ -5,6 +5,7 @@ import Title from "./components/Title";
 import Button from "./components/Button";
 import Data from "./data.json";
 import { useState } from "react";
+import Plus from "./components/Plus";
 
 function App() {
   const [cardToggle, setCardToggle] = useState(Data)
@@ -34,6 +35,7 @@ function App() {
         <Title currentFilter={filters} setFilter={setFilters} />
         <Button cards={filterData} onRemove={handleRemove} onToggle={handToggle} />
       </div>
+      <Plus/>
     </div>
   );
 }
