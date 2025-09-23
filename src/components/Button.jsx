@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import Data from '../data.json'
-export default function Button({cards}) {
+export default function Button({cards, onRemove, onToggle}) {
   const [toggle, setToggle] = useState(false)
   return (
     <div className='flex flex-col md:grid md:grid-cols-3 gap-5 w-full justify-center items-center'>
      {cards.map((card,  i)=>(
-      <div key={i} className='w-full bg-white rounded-xl shadow-md p-4 pt-3 flex flex-col gap-12'>
+      <div key={i} className='w-full cardD bg-white rounded-xl shadow-md p-4 pt-3 flex flex-col gap-12'>
         <div className='flex gap-5'>
         <img src={card.logo} alt="logoIcon" className='w-20 h-16' />
         <div className='flex flex-col gap-3'>
@@ -14,13 +14,12 @@ export default function Button({cards}) {
       </div>
       </div>
       <div className='flex justify-between'>
-        {}
-      <button className='bg-  text-[hsl(227,75%,14%)] border-1 rounded-3xl  w-20'>Remove</button>
-      <button onClick={()=>setToggle(!toggle)} className=' text-3xl'>
-        {toggle ? (
-         <i className='bi bi-toggle-on' />
+      <button onClick={()=> onRemove(card.id)} className='focus:border-red-600 focus:bg-[hsl(217,61%,90%)] flex justify-center items-center hover:text-white hover:bg-[hsl(3,77%,44%)] text-[hsl(227,75%,14%)] border-1 rounded-3xl  w-20'>Remove</button>
+      <button onClick={()=>onToggle(card.id)} className=' text-4xl '>
+        {card.isActive ? (
+         <i className=' bi bi-toggle-on text-red-600' />
         ): (
-          <i className='bi bi-toggle-off'/>
+          <i className='bi bi-toggle-off focus:text-[hsl(217,61%,90%)]'/>
         )}
       </button>
       </div>

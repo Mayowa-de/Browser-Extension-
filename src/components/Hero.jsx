@@ -3,18 +3,24 @@ import './Hero.css'
 import Date from '../data.json'
 
 export default function Hero() {
-  const [isToggle, setIsToggle] = useState(false)
+  const [isToggle, setIsToggle] = useState(()=>{
+    return localStorage.getItem('theme') === 'dark'
+  })
 
   useEffect(()=>{
+    const root = document.documentElement;
     if(isToggle){
-      document.documentElement.classList.add('dark')
+      root.classList.add('dark')
+
+      localStorage.setItem('theme',  'dark')
     }else{
-      document.documentElement.classList.remove('dark')
+      root.classList.remove('dark');
+
+      localStorage.setItem('theme', 'light')
     }
   },[isToggle])
   return (
-    <div className=''>
-      <div className='flex mt-4 gap-4 items-center w-full bg-white p-2 h-16 shadow-md'>
+      <div className='flex mt-4 gap-4 items-center rounded-xl w-full bg-white p-2 h-16 shadow-md'>
         <img src='/public/images/logo.svg' alt="Logo" className=' w-40 '/>
         <div className='w-full flex justify-end'>
         <button onClick={()=>setIsToggle(!isToggle)} className=' w-12 h-12 flex justify-center items-center rounded-xl bg-[hsl(226,11%,37%)]  '>
@@ -26,6 +32,5 @@ export default function Hero() {
           </button>
       </div>
       </div>
-    </div>
   )
 }
