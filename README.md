@@ -1,12 +1,35 @@
-# React + Vite
+# Frontend Mentor - Browser extensions manager UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Design preview for the Browser extensions manager UI coding challenge](./preview.jpg)
 
-Currently, two official plugins are available:
+## Welcome! 👋
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Thanks for checking out this front-end coding challenge.
 
-## Expanding the ESLint configuration
+[Browser Extension](https://www.browser-Extension.io) challenges help you improve your coding skills by building realistic projects.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Overview
+## Components
+### Button
+### Hero
+### Plus
+### Title
+
+## The challenge
+
+The challenge is to build out this browser extension manager UI and get it looking as close to the design as possible.
+
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+
+We provide the data for the extensions in a local `data.json` file. So you can use that to add the data dynamically if you choose.
+
+Your users should be able to: 
+
+- Toggle extensions between active and inactive states
+- Filter active and inactive extensions
+- Remove extensions from the list
+- Select their color theme
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
+
+
