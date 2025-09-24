@@ -22,11 +22,11 @@ export default function Button({ cards, onRemove, onToggle }) {
           <div className="flex justify-between">
             <button
               onClick={() => onRemove(card.id)}
-              className="focus:border-red-600 dark:focus:bg-hsl(225,23%,24%) dark:text-white focus:bg-[hsl(217,61%,90%)] flex justify-center items-center hover:text-white hover:bg-[hsl(3,77%,44%)] text-[hsl(227,75%,14%)] dark:border-white border-1 rounded-3xl  w-20"
+              className="focus:border-red-600 dark:focus:bg-hsl(225,23%,24%) cursor-pointer dark:text-white focus:bg-[hsl(217,61%,90%)] flex justify-center items-center hover:text-white hover:bg-[hsl(3,77%,44%)] text-[hsl(227,75%,14%)] dark:border-white border-1 rounded-3xl  w-20"
             >
               Remove
             </button>
-            <button onClick={() => onToggle(card.id)} className=" text-4xl ">
+            <button onClick={() => onToggle(card.id)} className=" text-4xl cursor-pointer">
               {card.isActive ? (
                 <i className=" bi bi-toggle-on text-red-600" />
               ) : (

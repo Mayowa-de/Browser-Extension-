@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="p-2 md:flex  grid grid-cols-1 justify-items-center md:items-center md:justify-center md:gap-0  shadow-md dark:bg-[hsl(226,25%,17%)] gap-3 justify-center items-center  bg-[linear-gradient(180deg,_#EBF2FC_0%,_#EEF8F9_100%)] border-2 rounded-xl border-[hsl(227,75%,14%)] dark:border-white ">
+    <div className="p-2 md:flex  grid grid-cols-1 justify-items-center md:items-center md:justify-center   shadow-md dark:bg-[hsl(226,25%,17%)] gap-3 justify-center items-center  bg-[linear-gradient(180deg,_#EBF2FC_0%,_#EEF8F9_100%)] border-2 rounded-xl border-[hsl(227,75%,14%)] dark:border-white ">
       <h2 className="font-semibold">Challenge by </h2>
       <div className="flex gap-3 items-center">
       <img
