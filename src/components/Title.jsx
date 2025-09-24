@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Hero.css'
 export default function Title({currentFilter, setFilter}) {
-  const btnClass= (val)=> `${currentFilter === val ? 'text-white bg-[hsl(3,77%,44%)] foucus:outline-none focus:ring-red-white transition focus:ring-2 focus:border-3 focus:border-[hsl(3,77%,44%)]' : 'bg-white text-[hsl(227,75%,14%)] focus:border-[hsl(3,77%,44%)] focus:border-1'}`;
+  const btnClass= (val)=> `${currentFilter === val ? 'text-white bg-[hsl(3,77%,44%)] foucus:outline-none focus:ring-red-600 transition focus:ring-2 focus:border-3 focus:border-[hsl(3,77%,44%)]' : 'bg-white text-[hsl(227,75%,14%)] focus:border-[hsl(3,77%,44%)] focus:border-1'}`;
 
  
   return (
