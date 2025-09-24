@@ -18,7 +18,7 @@ export default function Title({ currentFilter, setFilter }) {
           onClick={() => setFilter("All")}
           className={`${btnClass(
             "All"
-          )} w-16 h-12   shadow-md rounded-3xl text-xl `}
+          )} w-16 h-12 cursor-pointer shadow-md rounded-3xl text-xl `}
         >
           All
         </button>
@@ -26,7 +26,7 @@ export default function Title({ currentFilter, setFilter }) {
           onClick={() => setFilter("Active")}
           className={`${btnClass(
             "Active"
-          )} w-24 h-12  shadow-md text-xl rounded-3xl`}
+          )} w-24 h-12  shadow-md text-xl cursor-pointer rounded-3xl`}
         >
           Active
         </button>
@@ -34,7 +34,7 @@ export default function Title({ currentFilter, setFilter }) {
           onClick={() => setFilter("Inactive")}
           className={`${btnClass(
             "Inactive"
-          )} w-28 h-12 text-xl  shadow-md  rounded-3xl`}
+          )} w-28 h-12 text-xl  shadow-md cursor-pointer  rounded-3xl`}
         >
           Inactive
         </button>

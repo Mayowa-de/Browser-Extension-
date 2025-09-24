@@ -25,7 +25,7 @@ export default function Hero() {
       <div className="w-full flex justify-end">
         <button
           onClick={() => setIsToggle(!isToggle)}
-          className={` w-12 h-12 flex justify-center items-center rounded-xl ${
+          className={` w-12 h-12 cursor-pointer flex justify-center items-center rounded-xl ${
             !isToggle
               ? "bg-[hsl(226,11%,37%)]"
               : "bg-[linear-gradient(180deg,_#EBF2FC_0%,_#EEF8F9_100%)]"
