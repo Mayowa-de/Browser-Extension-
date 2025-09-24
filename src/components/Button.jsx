@@ -9,7 +9,7 @@ export default function Button({cards, onRemove, onToggle}) {
         <img src={card.logo} alt="logoIcon" className='w-20 h-16' />
         <div className='flex flex-col gap-3'>
         <h1 className='text-[hsl(227,75%,14%)] font-bold text-xl dark:text-white'>{card.name}</h1>
-      <p className='text-[hsl(225, 23%, 24%)]'>{card.description}</p>
+      <p className='text-[hsl(225, 23%, 24%)] dark:text-white'>{card.description}</p>
       </div>
       </div>
       <div className='flex justify-between'>

@@ -29,7 +29,7 @@ function App() {
   };
 
   return (
-    <div className="bg-[hsl(227, 75%, 14%)] gap-5 p-4 flex flex-col">
+    <div className="dark:bg-[hsl(227,75%,14%)] bg-[linear-gradient(180deg,_#EBF2FC_0%,_#EEF8F9_100%)] gap-5 p-4 flex flex-col">
       <Hero />
       <div className="flex flex-col  gap-3 justify-center items-center">
         <Title currentFilter={filters} setFilter={setFilters} />
