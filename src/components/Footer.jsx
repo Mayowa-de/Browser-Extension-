@@ -6,6 +6,7 @@ export default function Footer() {
       <h2 className="font-semibold">Challenge by </h2>
       <div className="flex gap-3 items-center">
       <img
+      aria-label="logo image"
         src="/images/favicon-32x32.png"
         className="w-10 h-10 shadow-md rounded-full border-none"
         alt="Logo icon"

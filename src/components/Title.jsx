@@ -15,6 +15,7 @@ export default function Title({ currentFilter, setFilter }) {
       </h1>
       <div className="flex gap-5 fontRegular font-medium w-full justify-end">
         <button
+        aria-label="All btn"
           onClick={() => setFilter("All")}
           className={`${btnClass(
             "All"
@@ -23,6 +24,7 @@ export default function Title({ currentFilter, setFilter }) {
           All
         </button>
         <button
+        aria-label="Active btn"
           onClick={() => setFilter("Active")}
           className={`${btnClass(
             "Active"
@@ -31,6 +33,7 @@ export default function Title({ currentFilter, setFilter }) {
           Active
         </button>
         <button
+        aria-label="Inactive btn"
           onClick={() => setFilter("Inactive")}
           className={`${btnClass(
             "Inactive"
